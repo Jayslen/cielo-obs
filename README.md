@@ -8,4 +8,4 @@ Ademas permite listar todas las observaciones que se agregaron.
 
 ## Como instalar
 
-Para instalar la aplicacion se debe instalar el APK en este enlace: [Descargar APK](https://drive.google.com/drive/u/1/my-drive)
+Para instalar la aplicacion se debe instalar el APK en este enlace: [Descargar APK](https://drive.google.com/file/d/1txa-a1JzjRKga5VaVAaXoOKRIOKXlcy1/view?usp=sharing)
