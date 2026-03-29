@@ -1,30 +1,43 @@
 {
   "expo": {
-    "name": "cielo-obs-rd",
+    "name": "Cielo Obs RD",
     "slug": "cielo-obs-rd",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#08111f"
     },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "La app usa tu ubicación para guardar el punto aproximado de la observación.",
+        "NSPhotoLibraryUsageDescription": "La app necesita acceso a tus fotos para adjuntar imágenes de observaciones.",
+        "NSMicrophoneUsageDescription": "La app necesita acceso al micrófono para grabar notas de voz."
+      },
+      "bundleIdentifier": "com.alanfranco.cieloobsrd"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/cielo_obs_20231887.png",
+        "backgroundColor": "#08111f"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.alanfranco.cieloobsrd",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": ["expo-sqlite"],
+    "extra": {
+      "eas": {
+        "projectId": "ad9f12e4-b3aa-4cbc-b674-9ecb9ac8f4d0"
+      }
     }
   }
 }
